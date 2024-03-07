@@ -1,18 +1,21 @@
-.todoFormContainer {
-  margin-bottom: 30px;
-}
-
 .todoFormContainer form {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .todoFormContainer input {
-  width: 45%;
+  width: 90%;
   height: 30px;
   font-size: 1.3rem;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
+}
+
+.todoFormContainer input:focus {
+  outline: none;
+  border: 2px solid #bdbebe;
 }

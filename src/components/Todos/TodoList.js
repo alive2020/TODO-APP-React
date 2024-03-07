@@ -1,3 +1,5 @@
+import { FaRegFaceSadCry } from "react-icons/fa6";
+
 import Todo from "./Todo";
 import styles from "./TodoList.module.css";
 
@@ -14,7 +16,10 @@ function TodoList({ todoList, deleteTodo, toggleTodo }) {
           />
         ))
       ) : (
-        <h2>Todo List is Empty</h2>
+        <div className={styles.todoListEmptyContainer}>
+          <FaRegFaceSadCry size={50} />
+          <p>Todo List is Empty</p>
+        </div>
       )}
     </div>
   );

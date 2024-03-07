@@ -5,7 +5,7 @@
   margin: 15px 0;
   font-size: 1.5rem;
   border-radius: 5px;
-  border: 2px solid #555;
+  border: 2px solid #7fc2bf;
   color: #112d49;
   background-color: #fbfef9;
   user-select: none;
@@ -19,7 +19,7 @@
 .todoIcon {
   font-size: 1.8rem;
   margin-right: 10px;
-  color: teal;
+  color: #07beb8;
 }
 
 .completedTodo {
@@ -50,7 +50,7 @@
 }
 
 .checkIcon:hover {
-  color: green;
+  color: #07beb8;
 }
 
 .deleteIcon:hover {

@@ -46,24 +46,26 @@ function App() {
   return (
     <div className="App">
       <h1> Todo List</h1>
-      <TodoForm addTodo={addTodoHandler} />
-      {!!todoList.length && (
-        <TodosActions
-          completedTodosExist={!!completedTodosCount}
-          resetTodos={resetTodosHandler}
-          deleteCompletedTodos={deletedCompletedTodosHandler}
+      <div className="todoWrapper">
+        <TodoForm addTodo={addTodoHandler} />
+        {!!todoList.length && (
+          <TodosActions
+            completedTodosExist={!!completedTodosCount}
+            resetTodos={resetTodosHandler}
+            deleteCompletedTodos={deletedCompletedTodosHandler}
+          />
+        )}
+        <TodoList
+          todoList={todoList}
+          deleteTodo={deleteTodoHandler}
+          toggleTodo={toggleTodoHandler}
         />
-      )}
-      <TodoList
-        todoList={todoList}
-        deleteTodo={deleteTodoHandler}
-        toggleTodo={toggleTodoHandler}
-      />
-      {completedTodosCount > 0 && (
-        <h3>{`You have completed ${completedTodosCount} ${
-          completedTodosCount > 1 ? "todos" : "todo"
-        }`}</h3>
-      )}
+        {completedTodosCount > 0 && (
+          <h3>{`You have completed ${completedTodosCount} ${
+            completedTodosCount > 1 ? "todos" : "todo"
+          }`}</h3>
+        )}
+      </div>
     </div>
   );
 }

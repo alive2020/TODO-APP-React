@@ -1,3 +1,11 @@
 .todoListContainer {
   padding: 10px;
 }
+
+.todoListEmptyContainer {
+  margin-top: 30px;
+}
+
+.todoListEmptyContainer p {
+  margin-top: 20px;
+}
